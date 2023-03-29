@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        .input-control{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Forms</h2>
+
+
+    <form>
+        <input type="text" class="input-control" value="predefined value">
+        <input type="number" class="input-control" id="age">
+        <input type="email" class="input-control" placeholder="Add your email">
+        <input type="password" class="input-control" required>
+        <input type="color" class="input-control" required>
+        <input type="date" class="input-control" disabled>
+        <button>Add</button>
+    </form>
+
+
+    <form>
+        <label>Select an option: </label>
+        <select>
+            <option value="option1">--- Option 1 ---</option>
+            <option value="option2">--- Option 2 ---</option>
+            <option value="option3">--- Option 3 ---</option>
+        </select>
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+    <h2>Product Exercise: </h2>
+    <form>
+        <input type="text" class="input-control" placeholder="Add product's name" required>
+        <input type="text" class="input-control" placeholder="Add description" required disabled>
+        <input type="text" class="input-control" placeholder="Add the price" required>
+        <label>Select the color of your product: </label>
+        <input type="color" class="input-control" required>
+        <label>Select the payment method: </label>
+        <select required>
+            <option value="Cash">--- Cash ---</option>
+            <option value="debidCard">--- Debit card ---</option>
+            <option value="creditCard">--- Credit card ---</option>
+        </select>
+        <button>Add</button>
+    </form>
+
+</body>
+</html>

@@ -13,24 +13,29 @@
     <title>My NatGeo page</title>
 </head>
 <body>
-    <nav>
+    <nav class="menu">
         <!--Add logos of NatGeo-->
-        <img src="img/ng-border.png" alt="frame">
-        <a href="#">Login</a>
-        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="#">Newsletters</a>
-        <a href="#">Subscribe</a>
-        <a href="#">Menu</a>
-        <a href="#"><i class="fa-solid fa-angles-down"></i></a>
+        <img class="logo-frame" src="img/ng-border.png" alt="frame">
+        <img class="logo" src="img/ng-logo-2fl.webp" alt="nat geo logo">
+        <div class="links-container">
+            <a class="link-login" href="#">Login</a>
+            <a class="link-search" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="link-news" href="#">Newsletters</a>
+            <a class="link-subs" href="#">Subscribe</a>
+            <a class="link-menu" href="#">Menu</a>
+            <a class="link-arrows" href="#"><i class="fa-solid fa-angles-down"></i></a>
+        </div>
     </nav>
 
     <header>
         <h1>Latest stories</h1>
-        <p>Susbscribe for full access to read more</p>
+        <p><a href="#">Susbscribe</a> for full access to read stories from National Geographic</p>
+        <div class="border"></div>
     </header>
-
-    <main>
-        <section>
+    
+    
+    <main class="main-container">
+        <section class="principal">
             <div>
                 <img src="img/covid.avif" alt="covid">
                 <h3>Environment</h3>
@@ -51,42 +56,61 @@
             </div>
         </section>
 
-        <section>
+        <section class="today">
             <h2>Today picks</h2>
-            <div>
-                <img src="img/NationalGeographic_2750370.avif" alt="climate">
-                <h3>Environment</h3>
-                <p>Climate change's hidden threat:grief and trauma.</p>
+            <div class="today-images">
+                <div>
+                    <img src="img/NationalGeographic_2750370.avif" alt="climate">
+                </div>
+                <div class="today-text">
+                    <h3>Environment</h3>
+                    <p>Climate change's hidden threat:grief and trauma.</p>
+                </div>
             </div>
-
-            <!-- Falta agregar mas imagenes -->
-            <div>
-                <img src="img/GettyImages-79050939.avif" alt="workweek">
-                <h3>History & culture</h3>
-                <p>How America settled on a 5-day workweek.</p>
-
+            <div class="today-images">
+                <div>
+                    <img src="img/GettyImages-79050939.avif" alt="workweek">
+                </div>
+                <div>
+                    <h3>History & culture</h3>
+                    <p>How America settled on a 5-day workweek.</p>
+                </div>
             </div>
-            <div>
-                <img src="img/01-sentosa-island.avif" alt="island">
-                <h3>Travel</h3>
-                <p>How a brutal POW camp became an idyllic island.</p>
-
+            <div class="today-images">
+                <div>
+                    <img src="img/01-sentosa-island.avif" alt="island">
+                </div>
+                <div>
+                    <h3>Travel</h3>
+                    <p>How a brutal POW camp became an idyllic island.</p>
+                </div>
             </div>
-            <div>
-                <img src="img/NationalGeographic_2695736.avif" alt="exercise">
-                <h3>Science</h3>
-                <p>Why do some love to exercise? It might be theri microbiome.</p>
+            <div class="today-images">
+                <div>
+                    <img src="img/NationalGeographic_2695736.avif" alt="exercise">
+                </div>
+                <div>
+                    <h3>Science</h3>
+                    <p>Why do some love to exercise? It might be theri microbiome.</p>
+                </div>
             </div>
-            <div>
-                <img src="img/C0510947-Comet_Neowise_July_2020.avif" alt="asteroids">
-                <h3>Science</h3>
-                <p>The difference between asteroids and comets.</p>
-
+            <div class="today-images">
+                <div>
+                    <img src="img/C0510947-Comet_Neowise_July_2020.avif" alt="asteroids">
+                </div>
+                <div>
+                    <h3>Science</h3>
+                    <p>The difference between asteroids and comets.</p>
+                </div>
             </div>
-            <div>
-                <img src="img/Leucistic_Adelie_Penguin-5.avif" alt="penguin">
-                <h3>Animals</h3>
-                <p>Rare 'blonde' penguin spotted in Antarctica. See the photo.</p>
+            <div class="today-images">
+                <div>
+                    <img src="img/Leucistic_Adelie_Penguin-5.avif" alt="penguin">
+                </div>
+                <div>
+                    <h3>Animals</h3>
+                    <p>Rare 'blonde' penguin spotted in Antarctica. See the photo.</p>
+                </div>
             </div>
         </section>
     </main>

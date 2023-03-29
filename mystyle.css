@@ -1,7 +1,187 @@
+/* Global variables */
+:root{
+    --primary: #ffcc00;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
 body{    
     font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+main{
+    /* max-width: 70%; */
 }
 
 img{
     max-width: 100%;
+}
+
+p{
+    font-size: 16px;
+}
+
+/* a{
+    text-decoration: none;
+    color: black;
+} */
+
+/* utilities */
+a, a:link {
+    color: black;
+    text-decoration: none;
+    background-position-y: -0%;
+    background-image: linear-gradient( white 50%, gold 50%);
+    transition: background 500ms ease;
+    background-size: 2px;
+    background-size: auto 175%;
+  }
+  
+  a:hover {
+    background-position-y: 100%;
+  
+  }
+
+
+/* navigation bar */
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.8rem;
+    background-color: white;
+    height: 4.6rem;
+}
+
+.links-container a{
+    margin-right: 1.5rem;
+}
+
+.logo{
+    display: none;
+}
+
+.logo-frame{
+    height: 3rem;
+}
+
+.link-login{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.link-search{
+    display: none;
+}
+
+.link-news{
+    display: none;
+}
+
+.link-subs{
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    padding: 1.4rem 2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.link-menu{
+    display: none;
+}
+
+.link-arrows{
+    font-size: 1.6rem;
+}
+
+/* header */
+header{
+    height: 25rem;
+    text-align: center;
+    text-anchor: middle;
+    padding: 4rem 2rem;
+}
+header h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+header p{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 1.5rem 0rem;
+}
+
+header span{
+    border-bottom: 1.5px solid #ffcc00;
+}
+
+.border{
+    border-bottom: 2px solid var(--primary);
+    width: 8%;
+    margin: 1rem auto;
+}
+
+
+/* main felx container */
+.main-container{
+    display: flex;
+    flex-direction: row-reverse;
+    /* align-items: start; */
+    width: 70%;
+    /* align-items: center; */
+    justify-content: center;
+    align-items: start;
+    margin: 2rem auto;
+}
+
+.today{
+    /* width: 100%; */
+}
+
+.today-images{
+    display: flex;
+    /* flex-direction: column; */
+    
+}
+
+.today-images img{
+    /* width: 40%; */
+}
+
+
+.today h2{
+    text-transform: uppercase;
+}
+
+.today-images h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .6rem;
+    letter-spacing: .4rem;
+}
+
+.today-images p{
+    font-size: .6rem;
+}
+
+.principal{ 
+    
+    /* width: 55%; */
 }
